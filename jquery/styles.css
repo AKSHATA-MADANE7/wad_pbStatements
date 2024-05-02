@@ -1,0 +1,61 @@
+/* Custom styles for PICT mobile website */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+[data-role="page"] {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+[data-role="header"] {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+[data-role="header"] h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+[data-role="content"] {
+    padding: 20px;
+}
+
+[data-role="button"] {
+    margin-bottom: 10px;
+}
+
+[data-role="footer"] {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #007bff;
+    color: #fff;
+    border-top: 1px solid #ccc;
+    border-radius: 0 0 10px 10px;
+}
+
+@media only screen and (max-width: 767px) {
+    [data-role="page"] {
+        border-radius: 0;
+    }
+}
+
+/* Loading spinner styles */
+.ui-loader {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PICT Mobile Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="home">
+    <div data-role="header">
+        <h1>PICT</h1>
+    </div>
+    <div data-role="content">
+        <p>Welcome to Pune Institute of Computer Technology (PICT).</p>
+        <a href="#about" data-role="button">About</a>
+        <a href="#courses" data-role="button">Courses</a>
+        <a href="#contact" data-role="button">Contact</a>
+    </div>
+    <div data-role="footer">
+        <h4>&copy; PICT</h4>
+    </div>
+</div>
+
+<div data-role="page" id="about">
+    <div data-role="header">
+        <h1>About</h1>
+    </div>
+    <div data-role="content">
+        <p>About PICT goes here...</p>
+        <a href="#home" data-role="button">Back to Home</a>
+    </div>
+    <div data-role="footer">
+        <h4>&copy; PICT</h4>
+    </div>
+</div>
+
+<div data-role="page" id="courses">
+    <div data-role="header">
+        <h1>Courses</h1>
+    </div>
+    <div data-role="content">
+        <p>Courses offered by PICT go here...</p>
+        <a href="#home" data-role="button">Back to Home</a>
+    </div>
+    <div data-role="footer">
+        <h4>&copy; PICT</h4>
+    </div>
+</div>
+
+<div data-role="page" id="contact">
+    <div data-role="header">
+        <h1>Contact</h1>
+    </div>
+    <div data-role="content">
+        <p>Contact information for PICT goes here...</p>
+        <a href="#home" data-role="button">Back to Home</a>
+    </div>
+    <div data-role="footer">
+        <h4>&copy; PICT</h4>
+    </div>
+</div>
+
+<!-- Loading spinner -->
+<div id="loading-spinner" class="ui-loader ui-corner-all ui-body-a ui-loader-default">
+    <span class="ui-icon-loading"></span>
+    <h1>Loading...</h1>
+</div>
+
+<script>
+    $(document).on("pagecontainershow", function(event, ui) {
+        var spinner = $("#loading-spinner");
+        spinner.show();
+
+        setTimeout(function() {
+            spinner.hide();
+        }, 2000); // Hide after 3 seconds
+    });
+</script>
+
+</body>
+</html>
